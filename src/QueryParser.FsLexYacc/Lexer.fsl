@@ -1,0 +1,37 @@
+﻿{
+module Lexer
+open System
+open Parser
+open Microsoft.FSharp.Text.Lexing
+
+let lexeme lexbuf =
+    LexBuffer<char>.LexemeString lexbuf
+
+}
+
+// These are some regular expression definitions
+let capChar = ['A'-'Z']
+let char1 = [^ '(' ')' ':' '"' ' ' '\t' '\n' '\r' '-']
+let char = char1 | ['-']
+let anychar = [^ '"']  
+let whitespace = [' ' '\t' ]
+let newline = ('\n' | '\r' '\n')
+
+rule tokenize = parse
+| whitespace	{ tokenize lexbuf }
+| newline       { tokenize lexbuf }
+// Operators
+| "AND"			{ AND }
+| "OR"			{ OR }
+| "NOT"	| "-"	{ NOT }
+// Misc
+| "("			{ LPAREN }
+| ")"			{ RPAREN }
+| ":"			{ SEMI }
+// Words and phrases
+| "Q" | "QUESTION"	{ QUESTION } 
+| "A" | "ANSWER"	{ ANSWER } 
+| (char1)char*		{ WORD (lexeme lexbuf) }
+| '"'anychar+'"'	{ PHRASE (lexeme lexbuf) }
+// EOF
+| eof   { EOF }

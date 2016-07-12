@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{5349ADFB-F4E6-465F-9824-9E8F08EE80C4}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0FA4A87-ACE5-4FE0-BAC2-E91EB2A0D8B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5D3D59D4-3993-434D-BE68-93B29650DDC1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "QueryParser.Tests", "tests\QueryParser.Tests\QueryParser.Tests.fsproj", "{3ACA7696-8675-4F4A-81FC-BA5467894A52}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "QueryParser.FsLexYacc", "src\QueryParser.FsLexYacc\QueryParser.FsLexYacc.fsproj", "{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "QueryParser.Facio", "src\QueryParser.Facio\QueryParser.Facio.fsproj", "{E6C3759B-0A3B-4920-87BA-40FEB4C2B077}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "QueryParser.FParsec", "src\QueryParser.FParsec\QueryParser.FParsec.fsproj", "{1038549A-F2C6-4C9D-8D41-79EB5D73E627}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3ACA7696-8675-4F4A-81FC-BA5467894A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACA7696-8675-4F4A-81FC-BA5467894A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACA7696-8675-4F4A-81FC-BA5467894A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACA7696-8675-4F4A-81FC-BA5467894A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C3759B-0A3B-4920-87BA-40FEB4C2B077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C3759B-0A3B-4920-87BA-40FEB4C2B077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C3759B-0A3B-4920-87BA-40FEB4C2B077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C3759B-0A3B-4920-87BA-40FEB4C2B077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1038549A-F2C6-4C9D-8D41-79EB5D73E627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1038549A-F2C6-4C9D-8D41-79EB5D73E627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1038549A-F2C6-4C9D-8D41-79EB5D73E627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1038549A-F2C6-4C9D-8D41-79EB5D73E627}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3ACA7696-8675-4F4A-81FC-BA5467894A52} = {5D3D59D4-3993-434D-BE68-93B29650DDC1}
+		{68368E7E-1FFD-4A3C-A722-624FC6A1A7F2} = {C0FA4A87-ACE5-4FE0-BAC2-E91EB2A0D8B4}
+		{E6C3759B-0A3B-4920-87BA-40FEB4C2B077} = {C0FA4A87-ACE5-4FE0-BAC2-E91EB2A0D8B4}
+		{1038549A-F2C6-4C9D-8D41-79EB5D73E627} = {C0FA4A87-ACE5-4FE0-BAC2-E91EB2A0D8B4}
+	EndGlobalSection
+EndGlobal

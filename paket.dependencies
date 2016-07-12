@@ -1,0 +1,18 @@
+source d:\GitHub\LocalNuGetFeed\
+source https://www.myget.org/F/nunit/api/v3/index.json
+source https://api.nuget.org/v3/index.json
+framework >= net45
+
+nuget FsLexYacc.Runtime
+nuget FsLexYacc
+nuget Facio alpha
+nuget FParsec
+
+group Test
+    framework: net45
+    source https://nuget.org/api/v2
+
+    nuget NUnit
+    nuget NUnit.Console
+
+    github fsprojects/FsUnit src/FsUnit.NUnit/FsUnitTyped.fs

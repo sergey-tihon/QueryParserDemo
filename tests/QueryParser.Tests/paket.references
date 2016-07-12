@@ -1,0 +1,4 @@
+FsLexYacc.Runtime
+group Test
+    NUnit
+    File:FsUnitTyped.fs
